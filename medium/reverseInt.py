@@ -5,12 +5,15 @@ class Solution:
             return 0
         
         sign = 1 if x > 0 else -1
+        
+        # handles signs and converts to positive
         x = abs(x)
         
         # to reverse digits
         reversed_num = 0
         while x > 0:
             digit = x % 10
+            
             x //= 10
             
             # check for overflow
