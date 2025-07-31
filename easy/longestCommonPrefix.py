@@ -30,19 +30,3 @@ class Solution(object):
         # If loop completes, first string is the prefix (or a prefix of it)
         return strs[0]
 
-# Test harness for verification
-if __name__ == "__main__":
-    solution = Solution()
-    test_cases = [
-        ["flower", "flow", "flight"],  # Expected: "fl"
-        ["dog", "racecar", "car"],    # Expected: ""
-        ["interspecies", "interstellar", "interstate"],  # Expected: "inter"
-        ["prefix", "prefixes", "pre"],  # Expected: "pre"
-        ["a"],                         # Expected: "a"
-        ["", "test"],                  # Expected: ""
-        ["abc", "abcd", "abce"]       # Expected: "abc"
-    ]
-    
-    for test in test_cases:
-        result = solution.longestCommonPrefix(test)
-        print(f"Input: {test} -> Output: '{result}'")
