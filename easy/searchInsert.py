@@ -13,5 +13,6 @@ class Solution(object):
                 right = mid - 1
         
         return left
-test = searchInsert([1,2,3,4], 3)
+sol = Solution()
+test = sol.searchInsert([1,2,3,4], 3)
 print(test)
