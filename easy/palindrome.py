@@ -1,11 +1,11 @@
 class Solution:
     def isPalindrome(self, x:int) -> bool:
         # handle negative numbers
-        if x<0 or (x % 10 == 0 and x != 0):
+        if x < 0 or (x % 10 == 0 and x != 0):
             return False
         
         # handle single digits
-        if x<10:
+        if x < 10:
             return True
         
         reversed_num = 0
